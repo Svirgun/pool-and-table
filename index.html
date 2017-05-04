@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pool</title>
+    </head>
+    <body>
+        <header>
+            <h1>Спортивна аналітика</h1>
+            <nav>
+                <p><em>Верхнє меню</em></p>
+                <ul>
+                    <li>
+                        <a href="table.html">Таблиця</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <form method="POST" action="https://formspree.io/svirgunzinovij@gmail.com" name="my-first-form">
+                <fieldset>
+                    <Legend>Персональна інформація:</Legend>
+                    <label for="last-name">Прізвище:</label>
+                    <input type="text" name="user-last-name" id="last-name" required placeholder="Хмельницький" autocomplete="on" maxlength="20" autofocus>
+                    <label for="first-name">Ім'я:</label>
+                    <input type="text" name="user-first-name" id="first-name" required placeholder="Богдан" autocomplete="on" maxlength="20">
+                    <label for="middle-name">По батькові:</label>
+                    <input type="text" name="middle-name" id="middle-name" required placeholder="Михайлович" autocomplete="on" maxlength="20">
+                    <br>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required placeholder="youremail@gmail.com" autocomplete="on">
+                    <label for="search">Посилання на Ваш сайт</label>
+                    <input type="url" name="my-site" id="search" placeholder="www.google.com">
+                    <br>
+                    <br>
+                    <label>Резюме (.doc, .txt)</label>
+                    <br>
+                    <input type="file" name="img" multiple>
+                    <br>
+                    <br>
+                    <label>
+                        Ваша стать:<br>
+                        <input type="radio" name="gender" value="malee" checked>Чоловік
+                    
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">Жінка
+                    
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Інша<br>
+                        <br>
+                    </label>
+                    <label>
+                        Дата народження:<br>
+                        <input type="date" name="birthday">
+                        <!-- Warning: The date input type is not supported in all browsers -->
+                        <br>
+                        <br>
+                    </label>
+                    <label>
+                        Про себе:<br>
+                        <textarea name="about-me" rows="10" cols="50"></textarea>
+                        <br>
+                        <br>
+                    </label>
+                    <label>
+                        Улюблений вид спорту:<br>
+                        <input list="sport">
+                        <datalist id="sport">
+                            <option value="футбол"></option>
+                            <option value="баскетбол"></option>
+                            <option value="хокей"></option>
+                            <option value="гандбол"></option>
+                            <option value="теніс"></option>
+                            <option value="формула 1"></option>
+                            <option value="волейбол"></option>
+                            <option value="інший"></option>
+                        </datalist>
+                    </label>
+                    <br>
+                    <br>
+                </fieldset>
+                <fieldset>
+                    <Legend>Опитування:</Legend>
+                    <h2>А Ви багато знаете про Лео Мессі в Барселоні?</h2>
+                    <hr>
+                    <h2>1. Батьківщина?</h2>
+                    <select name="nationality">
+                        <option value="Brazil">Бразилія</option>
+                        <option value="Spain">Іспанія</option>
+                        <option value="Argentina">Аргентина</option>
+                        <option value="Austria">Австрія</option>
+                        <option value="France">Франція</option>
+                        <option value="Japan">Японія</option>
+                        <option value="Venezuela">Венесуела</option>
+                        <option value="USA" selected>Сполучені Штати Америки</option>
+                        <option value="Italy">Італія</option>
+                        <option value="England">Англія</option>
+                        <option value="Ukraine">Україна</option>
+                        <option value="Other">Інша</option>
+                    </select>
+                    <h2>2. Скільки років Лео?</h2>
+                    <input type="number" name="age" min="1" max="40">
+                    <h2>3. Кому Мессі забив свій перший гол?</h2>
+                    <label>
+                        <input type="radio" name="team" value="numancia" checked>
+                        Нумансія<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="team" value="real">
+                        Реал<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="team" value="albasete">
+                        Альбасете<br>
+                    </label>
+                    <h2>4. Як називається стадіон FC Barcelona?</h2>
+                    <label>
+                        <input type="radio" name="stadium">
+                        Сантьяго Бернабеу<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="stadium">
+                        Камп Ноу<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="stadium" checked>
+                        Хайбери<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="stadium">
+                        Олд Траффорд<br>
+                    </label>
+                    <label>
+                        <input type="radio" name="stadium">
+                        Альянц Арена<br>
+                    </label>
+                    <h2>5. Скільки золотих м'ячів отримав Мессі?</h2>
+                    <label>
+                        <input type="radio" name="gold-ball">1
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="gold-ball">2
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="gold-ball" checked>3
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="gold-ball">4
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="gold-ball">
+                        5<br>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Підсумок</legend>
+                    <h2>Чи цікавим був тест?</h2>
+                    <label>
+                        <input type="radio" name="result" value="yes">Так
+                        
+                        
+                    </label>
+                    <label>
+                        <input type="radio" name="result" value="no">
+                        Ні<br>
+                        <br>
+                    </label>
+                    <h2>Оцінка за 10-ти бальною шкалою:</h2>
+                    <input type="range" name="points" min="0" max="10">
+                    <h3>1 2 3 4 5 6 7 8 9 10</h3>
+                    <br>
+                    <br>
+                </fieldset>
+                <br>
+                <input type="image" src="send.svg" alt="send" width="48" height="48">
+                <input type="reset" value="Очистити">
+            </form>
+        </main>
+        <footer>
+            <nav>
+                <p>Нижнє меню</p>
+                <ul>
+                    <li>
+                        <a href="table.html">Таблиця</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
